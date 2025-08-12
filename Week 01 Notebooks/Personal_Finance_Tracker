@@ -1,0 +1,31 @@
+print("=== Personal Finance Tracker v0.1 ===")
+print("Week 3: Smart Budget Decisions")
+print()
+
+# User setup
+name = input("Enter your name: ")
+monthly_income = float(input("Enter your monthly income: $"))
+
+print(f"\nWelcome to your finance tracker, {name}!")
+print(f"Monthly income: ${monthly_income:.2f}")
+
+# This week's feature: Expense categorisation
+print("\n--- Expense Entry ---")
+expense_amount = float(input("Enter an expense: $"))
+expense_description = input("What was this expense for? ")
+
+# Apply your decision-making skills here
+# Categorise the expense and give feedback
+if expense_amount >= 100:
+  category = "Major Expense"
+  print("Your Expense is: ", category)
+elif expense_amount >= 50:
+  category = "Moderate Expense"
+  print("Your Expense is: ", category)
+elif expense_amount >= 10:
+  category = "Minor Expense"
+  print("Your Expense is: ", category)
+else: 
+  category = "Small Purchase"
+  print("Your Expense is: ", category)
+# This becomes the foundation you'll build on each week!
